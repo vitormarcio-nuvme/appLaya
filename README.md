@@ -1,5 +1,7 @@
 # AUTOPISTA
 
+Pequeno projeto idealizado para testar o uso de Agents e o modelo Laya localmente.
+
 Jogo de rodovia em **Python + tkinter** em que quem dirige é um **LLM local** (o Laya, via API System One). A cada ~0,5 s o jogo descreve a pista em texto e o modelo responde com um comando de uma palavra. Há ainda um piloto heurístico (sem rede) para comparação e o modo manual.
 
 - Sem dependências externas: só a biblioteca padrão do Python + tkinter.
