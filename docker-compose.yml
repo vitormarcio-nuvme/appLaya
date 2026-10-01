@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  laya-decider:
+    build: .
+    container_name: laya_cpu_server
+    ports:
+      - "8000:8000"
+    volumes:
+      # Cria um volume local para armazenar o cache do Hugging Face (pesos do modelo)
+      - hf_cache:/root/.cache/huggingface
+    restart: unless-stopped
+
+volumes:
+  hf_cache:
+
